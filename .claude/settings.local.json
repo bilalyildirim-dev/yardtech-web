@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:5159)",
+      "Bash(/Users/hilal/Desktop/YardTech_DotNet/wwwroot/css/site.css:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5159/Home/Services)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5159/Home/About)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5159/Home/Contact)",
+      "WebFetch(domain:bianalytics.com.tr)",
+      "Bash(pkill -f \"dotnet run\")",
+      "Bash(dotnet build:*)",
+      "Bash(/usr/local/share/dotnet/dotnet build:*)",
+      "Read(//usr/local/share/dotnet/**)",
+      "Read(//Users/hilal/.dotnet/**)",
+      "Read(//usr/**)",
+      "Bash(/Users/hilal/.dotnet/dotnet build:*)",
+      "Bash(ls /Users/hilal/Desktop/YardTech_DotNet/*.sln /Users/hilal/Desktop/YardTech_DotNet/*.csproj)",
+      "Bash(kill 18131)",
+      "Bash(pkill -f dotnet)",
+      "Bash(curl -s http://localhost:5159/Home/Contact)"
+    ]
+  }
+}

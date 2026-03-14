@@ -1,0 +1,21 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+*.log
+
+## Publish
+out/
+publish/
+
+## Secrets
+appsettings.Development.json
+*.pfx
+*.p12
+
+## OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,774 @@
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg">
+        <div class="grid-pattern"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+    </div>
+    <div class="container">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    Yapay Zeka • Veri Bilimi • Danışmanlık
+                </div>
+                <h1 class="hero-title">
+                    Geleceğin<br />
+                    <span class="text-gradient">Teknolojisini</span><br />
+                    İnşa Ediyoruz
+                </h1>
+                <p class="hero-desc">
+                    Yapay zeka çözümleri, ileri veri bilimi ve stratejik teknoloji danışmanlığıyla işletmenizin verilerini rekabet avantajına dönüştürüyoruz. Türkiye'nin en güçlü teknoloji ekibi, sizin yanınızda.
+                </p>
+                <div class="hero-actions">
+                    <a asp-controller="Home" asp-action="Contact" class="btn-primary">
+                        Hemen Başla
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a asp-controller="Home" asp-action="About" class="btn-ghost">
+                        Daha Fazla Bilgi
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 8 16 12 12 16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <span>ISO 27001 Sertifikalı</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <span>KVKK Uyumlu</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <span>Global Destek</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos data-aos-delay="150">
+                <div class="visual-card">
+                    <div class="visual-card-header">
+                        <div class="traffic-lights">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="visual-card-title">YardTech Dashboard</span>
+                    </div>
+                    <div class="visual-stats">
+                        <div class="vstat">
+                            <div class="vstat-value counter" data-target="150">0</div>
+                            <div class="vstat-label">AI Modeli</div>
+                        </div>
+                        <div class="vstat">
+                            <div class="vstat-value">50M+</div>
+                            <div class="vstat-label">Veri/Gün</div>
+                        </div>
+                        <div class="vstat">
+                            <div class="vstat-value">97%</div>
+                            <div class="vstat-label">Doğruluk</div>
+                        </div>
+                    </div>
+                    <div class="visual-chart">
+                        <div class="chart-bar" style="height:40%"><span>Q1</span></div>
+                        <div class="chart-bar" style="height:65%"><span>Q2</span></div>
+                        <div class="chart-bar" style="height:55%"><span>Q3</span></div>
+                        <div class="chart-bar active" style="height:85%"><span>Q4</span></div>
+                    </div>
+                    <div class="visual-ekg">
+                        <svg class="ekg-svg" viewBox="0 0 300 40" preserveAspectRatio="none">
+                            <polyline class="ekg-path" points="0,20 25,20 38,20 46,4 54,36 62,20 88,20 113,20 126,20 134,4 142,36 150,20 176,20 201,20 214,20 222,4 230,36 238,20 264,20 289,20 300,20"/>
+                        </svg>
+                    </div>
+                    <div class="visual-status">
+                        <div class="status-dot pulse"></div>
+                        <span>Model aktif — çıkarım yapılıyor</span>
+                        <span class="status-time">Şimdi</span>
+                    </div>
+                </div>
+                <div class="visual-float-card float-card-1">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B82FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 8v4l3 3"/></svg>
+                    <div>
+                        <div class="float-card-label">Model Doğruluğu</div>
+                        <div class="float-card-val">97.3% Accuracy</div>
+                    </div>
+                </div>
+                <div class="visual-float-card float-card-2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    <div>
+                        <div class="float-card-label">Günlük Veri İşleme</div>
+                        <div class="float-card-val">50M+ Kayıt</div>
+                    </div>
+                </div>
+                <div class="visual-float-card float-card-3">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <div>
+                        <div class="float-card-label">Uptime SLA</div>
+                        <div class="float-card-val" style="color:#34d399">99.9% Garantili</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients-section">
+    <div class="container">
+        <p class="clients-label">Güvenilen Teknoloji Ortakları</p>
+        <div class="clients-row">
+            <div class="client-logo">Microsoft</div>
+            <div class="client-logo">AWS</div>
+            <div class="client-logo">Google Cloud</div>
+            <div class="client-logo">Azure</div>
+            <div class="client-logo">Oracle</div>
+            <div class="client-logo">SAP</div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+    <div class="container">
+        <div class="section-header" data-aos>
+            <div class="section-badge">Hizmetlerimiz</div>
+            <h2 class="section-title">Kapsamlı Teknoloji <span class="text-gradient">Çözümleri</span></h2>
+            <p class="section-desc">İşletmenizin ihtiyaçlarına özel, uçtan uca dijital dönüşüm hizmetleri sunuyoruz.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-aos data-aos-delay="0">
+                <div class="service-icon service-icon-blue">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 8v4l3 3"/><path d="M5.45 5.11L2 12h3l2 5"/><path d="M18.55 5.11L22 12h-3l-2 5"/></svg>
+                </div>
+                <h3>Yapay Zeka Çözümleri</h3>
+                <p>LLM entegrasyonları, özel model eğitimi ve RAG sistemleriyle kurumsal yapay zeka dönüşümü. GPT-4o, Claude, Gemini tabanlı uygulamalar.</p>
+                <a asp-controller="Home" asp-action="Services" class="service-link">
+                    Detaylar
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-card" data-aos data-aos-delay="80">
+                <div class="service-icon service-icon-purple">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                </div>
+                <h3>Veri Bilimi & Analitik</h3>
+                <p>Tahminsel analitik, makine öğrenimi pipeline'ları, gerçek zamanlı BI dashboard'ları ve veri mühendisliği ile verilerinizi değere dönüştürüyoruz.</p>
+                <a asp-controller="Home" asp-action="Services" class="service-link">
+                    Detaylar
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-card" data-aos data-aos-delay="160">
+                <div class="service-icon" style="background:rgba(245,158,11,.08);border-color:rgba(245,158,11,.25);color:#f59e0b">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3>Stratejik Danışmanlık</h3>
+                <p>Teknoloji yol haritası, AI adopsiyon stratejisi ve dijital dönüşüm danışmanlığıyla organizasyonunuzu geleceğe hazırlıyoruz.</p>
+                <a asp-controller="Home" asp-action="Services" class="service-link">
+                    Detaylar
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-card" data-aos data-aos-delay="0">
+                <div class="service-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <h3>Yazılım Geliştirme</h3>
+                <p>Özel ihtiyaçlarınıza yönelik yüksek performanslı yazılım çözümleri. .NET 8, React, Node.js ve mikroservis mimarileriyle kurumsal uygulamalar.</p>
+                <a asp-controller="Home" asp-action="Services" class="service-link">
+                    Detaylar
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-card" data-aos data-aos-delay="80">
+                <div class="service-icon service-icon-green">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                </div>
+                <h3>Bulut & DevOps</h3>
+                <p>AWS, Azure ve GCP'de ölçeklenebilir altyapı mimarileri. Kubernetes, CI/CD pipeline'ları ve Infrastructure as Code ile maliyet optimizasyonu.</p>
+                <a asp-controller="Home" asp-action="Services" class="service-link">
+                    Detaylar
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-card" data-aos data-aos-delay="160">
+                <div class="service-icon service-icon-red">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Siber Güvenlik</h3>
+                <p>Penetrasyon testleri, 7/24 SOC hizmeti ve Zero Trust mimarisiyle dijital varlıklarınızı sürekli koruma altında tutuyoruz.</p>
+                <a asp-controller="Home" asp-action="Services" class="service-link">
+                    Detaylar
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RING METRICS -->
+<section class="stats-section rings-section">
+    <div class="stats-bg"></div>
+    <div class="container">
+        <div class="rings-row">
+            <div class="ring-item" data-aos>
+                <div class="ring-wrap">
+                    <svg viewBox="0 0 120 120" class="ring-svg">
+                        <defs>
+                            <linearGradient id="rg-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#5B82FF"/>
+                                <stop offset="100%" stop-color="#00C8FF"/>
+                            </linearGradient>
+                        </defs>
+                        <circle class="ring-track" cx="60" cy="60" r="50"/>
+                        <circle class="ring-fill" cx="60" cy="60" r="50" stroke="url(#rg-blue)" data-pct="97"/>
+                    </svg>
+                    <div class="ring-center">
+                        <div class="ring-num">97%</div>
+                        <div class="ring-unit">Doğruluk</div>
+                    </div>
+                </div>
+                <div class="ring-label">Model Performansı</div>
+            </div>
+            <div class="ring-item" data-aos data-aos-delay="80">
+                <div class="ring-wrap">
+                    <svg viewBox="0 0 120 120" class="ring-svg">
+                        <defs>
+                            <linearGradient id="rg-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00C8FF"/>
+                                <stop offset="100%" stop-color="#a78bfa"/>
+                            </linearGradient>
+                        </defs>
+                        <circle class="ring-track" cx="60" cy="60" r="50"/>
+                        <circle class="ring-fill" cx="60" cy="60" r="50" stroke="url(#rg-cyan)" data-pct="99"/>
+                    </svg>
+                    <div class="ring-center">
+                        <div class="ring-num">99.9%</div>
+                        <div class="ring-unit">Uptime</div>
+                    </div>
+                </div>
+                <div class="ring-label">Sistem Güvenilirliği</div>
+            </div>
+            <div class="ring-item" data-aos data-aos-delay="160">
+                <div class="ring-wrap">
+                    <svg viewBox="0 0 120 120" class="ring-svg">
+                        <defs>
+                            <linearGradient id="rg-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#a78bfa"/>
+                                <stop offset="100%" stop-color="#5B82FF"/>
+                            </linearGradient>
+                        </defs>
+                        <circle class="ring-track" cx="60" cy="60" r="50"/>
+                        <circle class="ring-fill" cx="60" cy="60" r="50" stroke="url(#rg-purple)" data-pct="94"/>
+                    </svg>
+                    <div class="ring-center">
+                        <div class="ring-num">94%</div>
+                        <div class="ring-unit">Tasarruf</div>
+                    </div>
+                </div>
+                <div class="ring-label">Maliyet Optimizasyonu</div>
+            </div>
+            <div class="ring-item" data-aos data-aos-delay="240">
+                <div class="ring-wrap">
+                    <svg viewBox="0 0 120 120" class="ring-svg">
+                        <defs>
+                            <linearGradient id="rg-green" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#34d399"/>
+                                <stop offset="100%" stop-color="#00C8FF"/>
+                            </linearGradient>
+                        </defs>
+                        <circle class="ring-track" cx="60" cy="60" r="50"/>
+                        <circle class="ring-fill" cx="60" cy="60" r="50" stroke="url(#rg-green)" data-pct="100"/>
+                    </svg>
+                    <div class="ring-center">
+                        <div class="ring-num">200+</div>
+                        <div class="ring-unit">Müşteri</div>
+                    </div>
+                </div>
+                <div class="ring-label">Kurumsal Başarı</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- AI SHOWCASE -->
+<section class="section ai-showcase">
+    <div class="ai-glow-bg"></div>
+    <div class="container">
+        <div class="section-header" data-aos>
+            <div class="section-badge">Yapay Zeka & Veri Bilimi</div>
+            <h2 class="section-title">Yapay Zekayı <span class="text-gradient">İşinize</span> Entegre Ediyoruz</h2>
+            <p class="section-desc">Özel eğitilmiş dil modelleri, bilgisayarla görme sistemleri ve tahminsel analitiğe kadar her yapay zeka ihtiyacınız için uçtan uca çözümler sunuyoruz.</p>
+        </div>
+        <div class="ai-capabilities">
+            <div class="ai-cap" data-aos>
+                <div class="ai-cap-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 8v4l3 3"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <div class="ai-cap-header">
+                    <h3>Büyük Dil Modelleri</h3>
+                    <span class="ai-cap-badge">GenAI</span>
+                </div>
+                <p>GPT-4o, Claude ve Gemini entegrasyonları. Şirket verilerinizle fine-tuning, RAG mimarileri ve kurumsal chatbot geliştirme.</p>
+                <ul>
+                    <li>Kurumsal Chatbot & Sanal Asistan</li>
+                    <li>Belge İşleme & Otomatik Özetleme</li>
+                    <li>Kod Asistanı & Geliştirici Araçları</li>
+                </ul>
+            </div>
+            <div class="ai-cap" data-aos data-aos-delay="100">
+                <div class="ai-cap-icon" style="background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.25);color:#a78bfa">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                </div>
+                <div class="ai-cap-header">
+                    <h3>Veri Bilimi Platformları</h3>
+                    <span class="ai-cap-badge" style="background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.25);color:#a78bfa">Analytics</span>
+                </div>
+                <p>Ham veriden eyleme geçirilebilir içgörülere. Veri mühendisliği, feature engineering, model geliştirme ve production dağıtımı.</p>
+                <ul>
+                    <li>Tahminsel & Reçete Edici Analitik</li>
+                    <li>Gerçek Zamanlı BI Dashboard'ları</li>
+                    <li>A/B Test & Deney Altyapısı</li>
+                </ul>
+            </div>
+            <div class="ai-cap" data-aos data-aos-delay="200">
+                <div class="ai-cap-icon" style="background:rgba(0,200,255,.08);border-color:rgba(0,200,255,.2);color:#00C8FF">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M7 8h10M7 12h5"/></svg>
+                </div>
+                <div class="ai-cap-header">
+                    <h3>Bilgisayarla Görme</h3>
+                    <span class="ai-cap-badge" style="background:rgba(0,200,255,.08);border-color:rgba(0,200,255,.2);color:#00C8FF">Vision AI</span>
+                </div>
+                <p>Görüntü ve video analiziyle kalite kontrol, nesne tespiti ve OCR. Üretim, perakende ve lojistik sektörlerine özel çözümler.</p>
+                <ul>
+                    <li>Otomatik Kalite Kontrol Sistemleri</li>
+                    <li>Nesne Tanıma & Anomali Tespiti</li>
+                    <li>Belge & Form Otomasyonu (OCR)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="ai-metrics">
+            <div class="ai-metric-item" data-aos>
+                <div class="ai-metric-val"><span class="counter" data-target="150">0</span>+</div>
+                <div class="ai-metric-label">Eğitilen AI Modeli</div>
+            </div>
+            <div class="ai-metric-item" data-aos data-aos-delay="80">
+                <div class="ai-metric-val">97%</div>
+                <div class="ai-metric-label">Ortalama Model Doğruluğu</div>
+            </div>
+            <div class="ai-metric-item" data-aos data-aos-delay="160">
+                <div class="ai-metric-val">50M+</div>
+                <div class="ai-metric-label">Günlük İşlenen Veri</div>
+            </div>
+            <div class="ai-metric-item" data-aos data-aos-delay="240">
+                <div class="ai-metric-val"><span class="counter" data-target="40">0</span>+</div>
+                <div class="ai-metric-label">Enterprise AI Projesi</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY US -->
+<section class="section why-us">
+    <div class="container">
+        <div class="why-grid">
+            <div class="why-content" data-aos>
+                <div class="section-badge">Neden YardTech?</div>
+                <h2 class="section-title">İşletmenizi İleriye <span class="text-gradient">Taşıyan</span> Fark</h2>
+                <p class="section-desc" style="text-align:left">
+                    Sadece yazılım geliştirmiyoruz — işletmenizin büyüme motorunu inşa ediyoruz.
+                </p>
+                <div class="why-features">
+                    <div class="why-feature">
+                        <div class="why-feature-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <div>
+                            <h4>İleri Teknoloji Stack</h4>
+                            <p>.NET 8, React 19, Kubernetes, Terraform ve daha fazlasıyla en güncel teknolojiler.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature">
+                        <div class="why-feature-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                        <div>
+                            <h4>Hız & Çeviklik</h4>
+                            <p>Agile metodoloji ve CI/CD pipeline'larıyla hızlı iterasyon ve güvenilir teslimat.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature">
+                        <div class="why-feature-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div>
+                            <h4>Uzman Kadro</h4>
+                            <p>Ortalama 8 yıl deneyime sahip, uluslararası sertifikalı mühendis ekibimiz.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature">
+                        <div class="why-feature-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Global Standart</h4>
+                            <p>ISO 27001, SOC 2 Type II ve KVKK uyumlu süreçlerle dünya standartları.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-image" data-aos data-aos-delay="120">
+                <div class="why-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop" alt="YardTech ofis ortamı" loading="lazy" />
+                    <div class="why-image-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6478b4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        <div>
+                            <div style="font-weight:700;color:#fff;font-size:.9rem">150+</div>
+                            <div style="color:#94a3b8;font-size:.75rem">Global Proje</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process-section">
+    <div class="container">
+        <div class="section-header" data-aos>
+            <div class="section-badge">Çalışma Sürecimiz</div>
+            <h2 class="section-title">Fikirden <span class="text-gradient">Gerçeğe</span> 4 Adım</h2>
+        </div>
+        <div class="process-steps">
+            <div class="process-step" data-aos data-aos-delay="0">
+                <div class="step-number">01</div>
+                <h3>Keşif & Analiz</h3>
+                <p>İhtiyaçlarınızı, hedeflerinizi ve mevcut altyapınızı derinlemesine analiz ediyoruz.</p>
+            </div>
+            <div class="process-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <div class="process-step" data-aos data-aos-delay="80">
+                <div class="step-number">02</div>
+                <h3>Tasarım & Planlama</h3>
+                <p>Mimari kararlar, teknoloji seçimi ve detaylı proje yol haritasını oluşturuyoruz.</p>
+            </div>
+            <div class="process-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <div class="process-step" data-aos data-aos-delay="160">
+                <div class="step-number">03</div>
+                <h3>Çevik Geliştirme</h3>
+                <p>Sprint bazlı iteratif geliştirme, sürekli entegrasyon ve düzenli demo toplantıları.</p>
+            </div>
+            <div class="process-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <div class="process-step" data-aos data-aos-delay="240">
+                <div class="step-number">04</div>
+                <h3>Yayın & Destek</h3>
+                <p>Sorunsuz yayına alım, 7/24 izleme ve kesintisiz teknik destek hizmeti.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONSULTING -->
+<section class="section consulting-section">
+    <div class="container">
+        <div class="section-header" data-aos>
+            <div class="section-badge">Stratejik Danışmanlık</div>
+            <h2 class="section-title">Teknoloji Stratejinizi <span class="text-gradient">Birlikte</span> Şekillendiriyoruz</h2>
+            <p class="section-desc">Sadece yazılım yazmıyoruz — işletmenizin teknoloji yol haritasını çiziyor, ROI'nizi maksimize edecek stratejileri birlikte belirliyoruz.</p>
+        </div>
+        <div class="consulting-grid">
+            <div class="consulting-card" data-aos>
+                <div class="consulting-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                </div>
+                <h3>Teknoloji Yol Haritası</h3>
+                <p>Mevcut durumu analiz ederek 3-5 yıllık dijital dönüşüm planı oluşturuyoruz. Önceliklendirme, bütçeleme ve risk yönetimi dahil.</p>
+                <ul class="consulting-list">
+                    <li>Mevcut Durum Analizi (As-Is Assessment)</li>
+                    <li>Hedef Mimari Tasarımı (To-Be Design)</li>
+                    <li>Geçiş Planı & Hızlı Kazanımlar</li>
+                </ul>
+            </div>
+            <div class="consulting-card consulting-card-featured" data-aos data-aos-delay="100">
+                <div class="consulting-icon" style="background:rgba(91,130,255,.12);border-color:rgba(91,130,255,.3);color:#5B82FF">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
+                <div class="consulting-featured-badge">En Çok Tercih Edilen</div>
+                <h3>AI Strateji & Adopsiyon</h3>
+                <p>Yapay zekayı organizasyonunuza entegre etmek için kapsamlı strateji, değişim yönetimi ve ekip eğitim programları.</p>
+                <ul class="consulting-list">
+                    <li>AI Kullanım Alanı Keşfi & Önceliklendirme</li>
+                    <li>PoC'dan Üretime Geçiş Planlaması</li>
+                    <li>Veri Olgunluk Değerlendirmesi (DMM)</li>
+                </ul>
+            </div>
+            <div class="consulting-card" data-aos data-aos-delay="200">
+                <div class="consulting-icon" style="background:rgba(16,185,129,.08);border-color:rgba(16,185,129,.2);color:#34d399">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                </div>
+                <h3>Performans & Maliyet Optimizasyonu</h3>
+                <p>Mevcut sistemlerin performans analizi, darboğaz tespiti ve bulut maliyeti optimizasyonu ile operasyonel verimliliği artırıyoruz.</p>
+                <ul class="consulting-list">
+                    <li>Sistem Performans & Kapasite Audit'i</li>
+                    <li>Cloud FinOps & Maliyet Azaltma</li>
+                    <li>Technical Debt Yönetimi & Modernizasyon</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI TERMINAL -->
+<section class="section terminal-section">
+    <div class="container">
+        <div class="terminal-grid">
+            <div class="terminal-content" data-aos>
+                <div class="section-badge">Gerçek Zamanlı AI</div>
+                <h2 class="section-title">Modeller <span class="text-gradient">Canlı Çalışıyor</span></h2>
+                <p style="color:var(--text-muted);line-height:1.8;margin-bottom:2rem">
+                    Altyapımız 7/24 kesintisiz çalışarak saniyede binlerce veri noktasını işliyor,
+                    modelleri güncelliyor ve kurumsal sistemlerinizle senkronize çalışıyor.
+                </p>
+                <div class="terminal-stats">
+                    <div class="tstat">
+                        <div class="tstat-val" id="tps-counter">4,827</div>
+                        <div class="tstat-lbl">Token/sn</div>
+                    </div>
+                    <div class="tstat">
+                        <div class="tstat-val" id="req-counter">1,293</div>
+                        <div class="tstat-lbl">İstek/sn</div>
+                    </div>
+                    <div class="tstat">
+                        <div class="tstat-val" style="color:#34d399">12ms</div>
+                        <div class="tstat-lbl">Ortalama Gecikme</div>
+                    </div>
+                </div>
+            </div>
+            <div class="terminal-window" data-aos data-aos-delay="120">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="tdot red"></span>
+                        <span class="tdot yellow"></span>
+                        <span class="tdot green"></span>
+                    </div>
+                    <span class="terminal-title">yardtech-ai ~ model-server</span>
+                    <div class="terminal-live">
+                        <span class="tlive-dot"></span>LIVE
+                    </div>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <div class="tline"><span class="tprompt">$</span> <span class="tcmd">model serve --gpu --replicas 4</span></div>
+                    <div class="tline tline-info">✓ GPU cluster initialized (4x A100)</div>
+                    <div class="tline tline-info">✓ Model loaded: gpt-yardtech-v3.2 (97.3% acc)</div>
+                    <div class="tline tline-success">▶ Server ready on :8080</div>
+                    <div class="tline tline-dim" id="live-log-1"></div>
+                    <div class="tline tline-dim" id="live-log-2"></div>
+                    <div class="tline tline-dim" id="live-log-3"></div>
+                    <div class="tline tline-cursor">█</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BEFORE / AFTER BENCHMARK -->
+<section class="section benchmark-section">
+    <div class="container">
+        <div class="section-header" data-aos>
+            <div class="section-badge">Kanıtlanmış Sonuçlar</div>
+            <h2 class="section-title">YardTech <span class="text-gradient">Farkı</span></h2>
+            <p class="section-desc">Gerçek projelerden ölçülen, doğrulanmış performans iyileştirmeleri.</p>
+        </div>
+        <div class="benchmark-grid">
+            <div class="benchmark-card" data-aos data-aos-delay="0">
+                <div class="benchmark-header">
+                    <span class="benchmark-icon benchmark-icon-blue">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </span>
+                    <span class="benchmark-label">Yanıt Süresi</span>
+                </div>
+                <div class="benchmark-bars">
+                    <div class="bm-row">
+                        <span class="bm-lbl bm-before">Önce</span>
+                        <div class="bm-bar-wrap"><div class="bm-bar bm-bar-before" data-w="82"></div></div>
+                        <span class="bm-val bm-before-val">820ms</span>
+                    </div>
+                    <div class="bm-row">
+                        <span class="bm-lbl bm-after">Sonra</span>
+                        <div class="bm-bar-wrap"><div class="bm-bar bm-bar-after" data-w="12"></div></div>
+                        <span class="bm-val bm-after-val">12ms</span>
+                    </div>
+                </div>
+                <div class="benchmark-delta">↓ %98.5 İyileşme</div>
+            </div>
+            <div class="benchmark-card" data-aos data-aos-delay="80">
+                <div class="benchmark-header">
+                    <span class="benchmark-icon benchmark-icon-green">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                    </span>
+                    <span class="benchmark-label">Model Doğruluğu</span>
+                </div>
+                <div class="benchmark-bars">
+                    <div class="bm-row">
+                        <span class="bm-lbl bm-before">Önce</span>
+                        <div class="bm-bar-wrap"><div class="bm-bar bm-bar-before" data-w="71"></div></div>
+                        <span class="bm-val bm-before-val">71%</span>
+                    </div>
+                    <div class="bm-row">
+                        <span class="bm-lbl bm-after">Sonra</span>
+                        <div class="bm-bar-wrap"><div class="bm-bar bm-bar-after" data-w="97"></div></div>
+                        <span class="bm-val bm-after-val">97.3%</span>
+                    </div>
+                </div>
+                <div class="benchmark-delta">↑ %37 İyileşme</div>
+            </div>
+            <div class="benchmark-card" data-aos data-aos-delay="160">
+                <div class="benchmark-header">
+                    <span class="benchmark-icon benchmark-icon-amber">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </span>
+                    <span class="benchmark-label">Altyapı Maliyeti</span>
+                </div>
+                <div class="benchmark-bars">
+                    <div class="bm-row">
+                        <span class="bm-lbl bm-before">Önce</span>
+                        <div class="bm-bar-wrap"><div class="bm-bar bm-bar-before" data-w="100"></div></div>
+                        <span class="bm-val bm-before-val">100%</span>
+                    </div>
+                    <div class="bm-row">
+                        <span class="bm-lbl bm-after">Sonra</span>
+                        <div class="bm-bar-wrap"><div class="bm-bar bm-bar-after" data-w="38"></div></div>
+                        <span class="bm-val bm-after-val">38%</span>
+                    </div>
+                </div>
+                <div class="benchmark-delta">↓ %62 Tasarruf</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials-section">
+    <div class="container">
+        <div class="section-header" data-aos>
+            <div class="section-badge">Müşteri Yorumları</div>
+            <h2 class="section-title">Başarı <span class="text-gradient">Hikayeleri</span></h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card" data-aos data-aos-delay="0">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"YardTech ekibi, kurumsal ERP sistemimizi 6 ayda tamamen modernize etti. Proje süreci boyunca iletişimleri ve teknik yetkinlikleri mükemmeldi."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">AY</div>
+                    <div>
+                        <div class="testimonial-name">Ahmet Yılmaz</div>
+                        <div class="testimonial-role">CTO, Anadolu Holding</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card" data-aos data-aos-delay="100">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Bulut migrasyonu projesinde YardTech'in uzmanlığı kritik rol oynadı. Maliyetlerimizi %40 azaltırken performansımız ikiye katlandı."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">EK</div>
+                    <div>
+                        <div class="testimonial-name">Elif Koç</div>
+                        <div class="testimonial-role">IT Direktörü, Garanti BBVA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card" data-aos data-aos-delay="200">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"YardTech'in veri bilimi ekibi, 3 yıllık satış verilerimizi analiz ederek tahminsel model kurdu. Stok optimizasyonumuz %42 iyileşti, kayıplarımız neredeyse sıfıra indi."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">MS</div>
+                    <div>
+                        <div class="testimonial-name">Murat Şahin</div>
+                        <div class="testimonial-role">Genel Müdür, TeknoRetail</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUSTED BY TECH STACK MARQUEE -->
+<section class="section techstack-section">
+    <div class="container">
+        <div class="techstack-label" data-aos>Entegre Çalıştığımız Teknolojiler</div>
+    </div>
+    <div class="techstack-track-wrap">
+        <div class="techstack-track">
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9900"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>AWS</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#0078D4"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Azure</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#4285F4"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Google Cloud</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#EE4C2C"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>PyTorch</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FF6F00"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>TensorFlow</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#3776AB"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Python</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#5B82FF"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>.NET</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#47A248"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>MongoDB</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#326CE5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Kubernetes</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#2496ED"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Docker</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#00C8FF"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>LangChain</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#764ABC"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Kafka</span>
+            <!-- duplicate for seamless loop -->
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9900"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>AWS</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#0078D4"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Azure</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#4285F4"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Google Cloud</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#EE4C2C"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>PyTorch</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FF6F00"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>TensorFlow</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#3776AB"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Python</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#5B82FF"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>.NET</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#47A248"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>MongoDB</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#326CE5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Kubernetes</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#2496ED"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Docker</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#00C8FF"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>LangChain</span>
+            <span class="tech-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="#764ABC"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>Kafka</span>
+        </div>
+    </div>
+</section>
+
+<!-- LIVE NOTIFICATION WIDGET (fixed corner) -->
+<div id="liveNotif" class="live-notif" aria-live="polite">
+    <div class="lnotif-dot"></div>
+    <div class="lnotif-text">
+        <strong id="lnotif-title">Yeni Proje Başladı</strong>
+        <span id="lnotif-sub">Veri analizi • az önce</span>
+    </div>
+    <button class="lnotif-close" onclick="this.parentElement.classList.remove('show')" aria-label="Kapat">×</button>
+</div>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="container">
+        <div class="cta-inner" data-aos>
+            <div class="section-badge" style="margin:0 auto 1.5rem">Başlayalım</div>
+            <h2 class="cta-title">Projenizi Hayata Geçirelim</h2>
+            <p class="cta-desc">Fikirlerinizi gerçeğe dönüştürmek için ihtiyacınız olan teknolojik ortağınızız. Ücretsiz keşif görüşmesi için bugün iletişime geçin.</p>
+            <div class="cta-actions">
+                <a asp-controller="Home" asp-action="Contact" class="btn-primary btn-lg">
+                    Ücretsiz Keşif Görüşmesi
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="tel:+902125550000" class="btn-outline btn-lg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 8.32 8.32l1.13-1.13a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 24 18z"/></svg>
+                    +90 (212) 555 00 00
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

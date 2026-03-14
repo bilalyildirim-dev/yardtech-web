@@ -1,0 +1,355 @@
+@model YardTech.Web.Models.ContactViewModel
+@{
+    ViewData["Title"] = "İletişim";
+}
+
+<!-- ═══════════════════════════════════════════════
+     PAGE HERO
+══════════════════════════════════════════════════ -->
+<section class="page-hero page-hero-sm contact-hero">
+    <div class="hero-bg">
+        <div class="grid-pattern"></div>
+        <div class="hero-glow"></div>
+    </div>
+    <div class="container">
+        <div class="page-hero-inner" data-aos>
+            <div class="section-badge">Bizimle Konuşun</div>
+            <h1 class="page-title">Büyük <span class="text-gradient">Fikirler</span> Buradan Başlar</h1>
+            <p class="page-desc">
+                Projenizi hayata geçirmek için doğru ekiptesiniz.<br />
+                YardTech uzmanları <strong>24 saat içinde</strong> size geri dönmeye hazır.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     RESPONSE GUARANTEE BAR
+══════════════════════════════════════════════════ -->
+<div class="contact-response-bar">
+    <div class="container">
+        <div class="contact-response-inner">
+            <div class="contact-response-dot"></div>
+            <span class="contact-response-text">Ekibimiz şu an aktif — tüm taleplere <strong>24 saat içinde</strong> yanıt veriyoruz.</span>
+            <div class="contact-response-badges">
+                <span class="contact-response-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    Ücretsiz İlk Görüşme
+                </span>
+                <span class="contact-response-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    NDA ile Gizlilik
+                </span>
+                <span class="contact-response-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    KVKK Uyumlu
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     QUICK CONTACT CHANNELS
+══════════════════════════════════════════════════ -->
+<div class="contact-channels-section">
+    <div class="container">
+        <div class="contact-channels">
+
+            <a href="mailto:info@yardtech.com" class="contact-channel-card">
+                <div class="contact-channel-icon contact-channel-icon--email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-channel-body">
+                    <div class="contact-channel-title">E-posta</div>
+                    <div class="contact-channel-val">info@yardtech.com</div>
+                    <div class="contact-channel-note">Teknik &amp; ticari talepler</div>
+                </div>
+                <svg class="contact-channel-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <a href="tel:+902125550000" class="contact-channel-card">
+                <div class="contact-channel-icon contact-channel-icon--phone">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 8.32 8.32l1.13-1.13a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 24 18z"/></svg>
+                </div>
+                <div class="contact-channel-body">
+                    <div class="contact-channel-title">Telefon</div>
+                    <div class="contact-channel-val">+90 (212) 555 00 00</div>
+                    <div class="contact-channel-note">Pzt – Cum, 09:00 – 18:00</div>
+                </div>
+                <svg class="contact-channel-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <a href="#" class="contact-channel-card">
+                <div class="contact-channel-icon contact-channel-icon--linkedin">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div class="contact-channel-body">
+                    <div class="contact-channel-title">LinkedIn</div>
+                    <div class="contact-channel-val">YardTech Teknoloji</div>
+                    <div class="contact-channel-note">Kurumsal ağ &amp; duyurular</div>
+                </div>
+                <svg class="contact-channel-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     MAIN CONTACT GRID
+══════════════════════════════════════════════════ -->
+<section class="section contact-main-section">
+    <div class="container">
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="success-banner" data-aos>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                @TempData["Success"]
+            </div>
+        }
+
+        <div class="contact-grid-v2">
+
+            <!-- ── LEFT: Office & Info Panel ── -->
+            <div class="contact-info-panel" data-aos>
+
+                <div class="contact-panel-header">
+                    <h2>Ofisimize <span class="text-gradient">Bekleriz</span></h2>
+                    <p>Yüz yüze görüşmeler için randevu alabilir ya da doğrudan ofisimize uğrayabilirsiniz. Çevrimiçi görüşme için Zoom/Teams bağlantısı da sağlarız.</p>
+                </div>
+
+                <!-- Office Card -->
+                <div class="contact-office-card">
+                    <div class="contact-office-card-header">
+                        <div class="contact-office-card-badge">Merkez Ofis</div>
+                        <h4>İstanbul – Levent</h4>
+                        <p>Türkiye'nin finans ve teknoloji merkezi</p>
+                    </div>
+                    <div class="contact-office-card-body">
+                        <div class="contact-office-detail">
+                            <div class="contact-office-detail-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <div class="contact-office-detail-label">Adres</div>
+                                <div class="contact-office-detail-val">Levent Plaza, No: 42<br />Beşiktaş, İstanbul 34340</div>
+                            </div>
+                        </div>
+                        <div class="contact-office-detail">
+                            <div class="contact-office-detail-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <div class="contact-office-detail-label">Çalışma Saatleri</div>
+                                <div class="contact-office-detail-val">Pazartesi – Cuma<br />09:00 – 18:00</div>
+                            </div>
+                        </div>
+                        <div class="contact-office-detail">
+                            <div class="contact-office-detail-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            </div>
+                            <div>
+                                <div class="contact-office-detail-label">Ulaşım</div>
+                                <div class="contact-office-detail-val">Metro: Levent İBB<br />Otobüs: 25E, 26E hattı</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-office-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5488673097456!2d29.00896131574107!3d41.0778076792970!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7175acb2d21%3A0x90e7c654b0ae4ccd!2sLevent%2C%20Be%C5%9Fikta%C5%9F%2FBe%C5%9Fikta%C5%9F%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1699000000000!5m2!1str!2str"
+                            width="100%" height="240" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="YardTech Ofis Konumu">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Trust Guarantees -->
+                <div class="contact-guarantees">
+                    <div class="contact-guarantees-title">Taahhütlerimiz</div>
+                    <div class="contact-guarantee-item">
+                        <div class="contact-guarantee-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <span>Her talebe <strong>24 saat</strong> içinde yanıt garantisi</span>
+                    </div>
+                    <div class="contact-guarantee-item">
+                        <div class="contact-guarantee-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <span>Gizli bilgiler <strong>NDA ile korunur</strong></span>
+                    </div>
+                    <div class="contact-guarantee-item">
+                        <div class="contact-guarantee-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        </div>
+                        <span>KVKK uyumlu <strong>veri işleme</strong> süreci</span>
+                    </div>
+                    <div class="contact-guarantee-item">
+                        <div class="contact-guarantee-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        </div>
+                        <span>İlk görüşme <strong>tamamen ücretsiz</strong></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ── RIGHT: Premium Form ── -->
+            <div class="contact-form-panel" data-aos data-aos-delay="120">
+                <div class="contact-form-card-v2">
+
+                    <!-- Card Header -->
+                    <div class="contact-form-card-header-v2">
+                        <div class="contact-form-card-header-badge">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                            Hızlı Yanıt Garantisi
+                        </div>
+                        <h3>Proje Talebinizi Gönderin</h3>
+                        <p>Formunuzu aldıktan sonra ilgili uzmanımız sizi arar ve ihtiyacınızı değerlendirir.</p>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="contact-form-card-body-v2">
+                        <form asp-action="Contact" method="post" novalidate id="contactFormPremium">
+                            @Html.AntiForgeryToken()
+
+                            <!-- Service Interest Chips -->
+                            <div class="form-section-label">Hangi konuda yardım istiyorsunuz?</div>
+                            <div class="form-chips" id="serviceChips">
+                                <button type="button" class="form-chip" data-val="Yazılım Geliştirme">Yazılım Geliştirme</button>
+                                <button type="button" class="form-chip" data-val="Yapay Zeka &amp; Otomasyon">Yapay Zeka</button>
+                                <button type="button" class="form-chip" data-val="Bulut Çözümleri">Bulut</button>
+                                <button type="button" class="form-chip" data-val="Siber Güvenlik">Siber Güvenlik</button>
+                                <button type="button" class="form-chip" data-val="Teknoloji Danışmanlığı">Danışmanlık</button>
+                                <button type="button" class="form-chip" data-val="Diğer">Diğer</button>
+                            </div>
+
+                            <!-- Name & Email -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label asp-for="FullName">Ad Soyad <span class="form-required">*</span></label>
+                                    <input asp-for="FullName" placeholder="Adınız Soyadınız" autocomplete="name" />
+                                    <span asp-validation-for="FullName" class="field-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Email">E-posta <span class="form-required">*</span></label>
+                                    <input asp-for="Email" type="email" placeholder="ornek@sirket.com" autocomplete="email" />
+                                    <span asp-validation-for="Email" class="field-error"></span>
+                                </div>
+                            </div>
+
+                            <!-- Phone & Subject -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label asp-for="Phone">Telefon</label>
+                                    <input asp-for="Phone" placeholder="+90 (5xx) xxx xx xx" autocomplete="tel" />
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Subject">Konu <span class="form-required">*</span></label>
+                                    <input asp-for="Subject" id="subjectField" placeholder="Proje Danışmanlığı" />
+                                    <span asp-validation-for="Subject" class="field-error"></span>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-group">
+                                <label asp-for="Message">Mesajınız <span class="form-required">*</span></label>
+                                <textarea asp-for="Message" rows="5" placeholder="Projeniz veya sorunuz hakkında detaylı bilgi verin. Bütçe aralığı, zaman çizelgesi ve beklentilerinizi paylaşırsanız daha hızlı değerlendirme yapabiliriz."></textarea>
+                                <span asp-validation-for="Message" class="field-error"></span>
+                            </div>
+
+                            <!-- Submit -->
+                            <button type="submit" class="btn-primary btn-submit-v2" id="submitBtnPremium">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Mesajı Gönder
+                            </button>
+
+                            <p class="form-privacy-v2">
+                                Bu formu göndererek
+                                <a href="#">Gizlilik Politikamızı</a> ve
+                                <a href="#">KVKK Aydınlatma Metnimizi</a>
+                                kabul etmiş olursunuz.
+                            </p>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     BOTTOM TRUST BAR
+══════════════════════════════════════════════════ -->
+<div class="contact-trust-bar">
+    <div class="container">
+        <div class="contact-trust-inner">
+            <div class="contact-trust-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>ISO 27001 Güvenlik Standardı</span>
+            </div>
+            <div class="contact-trust-sep"></div>
+            <div class="contact-trust-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>KVKK Uyumlu</span>
+            </div>
+            <div class="contact-trust-sep"></div>
+            <div class="contact-trust-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>7/24 Teknik Destek</span>
+            </div>
+            <div class="contact-trust-sep"></div>
+            <div class="contact-trust-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>%100 Yerli Yazılım Ekibi</span>
+            </div>
+            <div class="contact-trust-sep"></div>
+            <div class="contact-trust-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span>50+ Uzman Kadro</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+<script>
+// ── Service interest chips ──
+(function() {
+    const chips = document.querySelectorAll('#serviceChips .form-chip');
+    const subjectField = document.getElementById('subjectField');
+    chips.forEach(chip => {
+        chip.addEventListener('click', function() {
+            chips.forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+            if (subjectField && !subjectField.dataset.userEdited) {
+                subjectField.value = this.dataset.val;
+            }
+        });
+    });
+    if (subjectField) {
+        subjectField.addEventListener('input', function() {
+            this.dataset.userEdited = '1';
+        });
+    }
+})();
+
+// ── Submit button state ──
+(function() {
+    const form = document.getElementById('contactFormPremium');
+    const btn  = document.getElementById('submitBtnPremium');
+    if (!form || !btn) return;
+    form.addEventListener('submit', function() {
+        btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg> Gönderiliyor...';
+        btn.disabled = true;
+        setTimeout(() => {
+            btn.disabled = false;
+            btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Mesajı Gönder';
+        }, 3000);
+    });
+})();
+</script>
+}
