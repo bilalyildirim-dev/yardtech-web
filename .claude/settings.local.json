@@ -17,7 +17,19 @@
       "Bash(ls /Users/hilal/Desktop/YardTech_DotNet/*.sln /Users/hilal/Desktop/YardTech_DotNet/*.csproj)",
       "Bash(kill 18131)",
       "Bash(pkill -f dotnet)",
-      "Bash(curl -s http://localhost:5159/Home/Contact)"
+      "Bash(curl -s http://localhost:5159/Home/Contact)",
+      "Bash(git remote:*)",
+      "Bash(git push:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://yardtech-web.onrender.com)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" --max-time 20 https://yardtech-web.onrender.com)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "WebFetch(domain:yardtech.com.tr)",
+      "WebFetch(domain:www.databricks.com)",
+      "WebFetch(domain:webcache.googleusercontent.com)",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \"https://www.databricks.com\")",
+      "Bash(python3:*)",
+      "Bash(pkill -f dotnet.*YardTech)"
     ]
   }
 }

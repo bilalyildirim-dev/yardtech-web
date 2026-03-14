@@ -4587,3 +4587,285 @@ footer, .site-footer {
   .contact-form-card-body-v2 { padding: 1.75rem; }
   .contact-form-card-header-v2 { padding: 1.75rem; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   DATABRICKS-INSPIRED THEME OVERRIDES
+   Warm oat bg · Dark navy dark-sections · Sharp buttons · Mono eyebrows
+═══════════════════════════════════════════════════════════════ */
+
+/* ── Root variables ── */
+:root {
+  --db-oat:      #F9F7F4;
+  --db-oat-mid:  #EEEDE9;
+  --db-dark:     #1B3139;
+  --db-dark-2:   #143D4A;
+  --db-orange:   #EB1600;
+  --db-orange-h: #BD2B26;
+  --db-text:     #1B3139;
+  --db-muted:    #5A6F77;
+  --db-dim:      #90A5B1;
+  --db-border:   #DCE0E2;
+  --db-shadow:   0px 4px 15px 0px rgba(27,49,57,.1);
+  --db-shadow-h: 0px 9px 13px rgba(27,49,57,.07), 0px 4px 8px rgba(27,49,57,.06), 0px 2px 3px rgba(27,49,57,.04);
+  --db-radius:   8px;
+}
+
+/* ── Base ── */
+body { background: var(--db-oat) !important; color: var(--db-text) !important; }
+body::before { display: none !important; }
+
+/* ── Eyebrow section-badge → monospace uppercase ── */
+.section-badge,
+.page-hero .section-badge,
+.cta-inner .section-badge {
+  font-family: 'SFMono-Regular', 'Consolas', 'Liberation Mono', monospace !important;
+  background: transparent !important;
+  border: none !important;
+  border-left: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  font-size: .72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+  color: var(--db-muted) !important;
+  backdrop-filter: none !important;
+  display: block !important;
+  margin-bottom: .875rem !important;
+}
+
+/* ── Headings ── */
+h1, h2, .hero-title, .page-title, .section-title, .cta-title {
+  font-weight: 500 !important;
+  letter-spacing: -.01em !important;
+  color: var(--db-text) !important;
+}
+.page-title { font-size: clamp(2.2rem, 5vw, 3.25rem) !important; font-weight: 500 !important; }
+.hero-title  { font-size: clamp(2.5rem, 6vw, 3.75rem) !important; font-weight: 500 !important; }
+
+/* ── Primary buttons → sharp corners, orange ── */
+.btn-primary,
+.btn-primary-sm,
+.btn-submit,
+.btn-submit-v2 {
+  background: var(--db-orange) !important;
+  border-radius: 4px !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  transition: background .2s ease !important;
+  box-shadow: none !important;
+}
+.btn-primary:hover, .btn-primary-sm:hover { background: var(--db-orange-h) !important; transform: none !important; box-shadow: none !important; }
+.btn-submit-v2 { background: linear-gradient(135deg, #1B3139, #143D4A) !important; }
+.btn-submit-v2:hover { background: linear-gradient(135deg, #143D4A, #0b2026) !important; transform: none !important; box-shadow: none !important; }
+
+/* ── Ghost / outline buttons ── */
+.btn-ghost, .btn-outline {
+  background: #fff !important;
+  color: var(--db-dark) !important;
+  border: 1px solid var(--db-border) !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+  box-shadow: none !important;
+}
+.btn-ghost:hover, .btn-outline:hover { border-color: var(--db-dark) !important; background: #fff !important; transform: none !important; }
+
+/* ── Navigation ── */
+.site-header {
+  background: #fff !important;
+  border-bottom: 1px solid var(--db-border) !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+.site-header.scrolled { box-shadow: 0 1px 0 var(--db-border) !important; background: #fff !important; }
+.nav-link { color: var(--db-text) !important; font-weight: 500 !important; font-size: .9rem !important; }
+.nav-link:hover, .nav-link.active { color: var(--db-orange) !important; }
+.nav-link.active::after { display: none !important; }
+
+/* ── Hero section ── */
+.hero { background: var(--db-oat) !important; }
+.hero-bg .grid-pattern { opacity: .04 !important; }
+.hero-bg .hero-glow { display: none !important; }
+.hero-bg .hero-orb-1, .hero-bg .hero-orb-2 { display: none !important; }
+
+/* ── Sections ── */
+.section { background: var(--db-oat) !important; }
+.section-alt,
+.values-section,
+.approach-section { background: #fff !important; }
+
+/* ── CTA section → dark navy ── */
+.cta-section {
+  background: var(--db-dark) !important;
+}
+.cta-section .cta-title,
+.cta-section .cta-desc,
+.cta-section .section-badge { color: rgba(255,255,255,.9) !important; }
+.cta-section .cta-desc { color: rgba(255,255,255,.65) !important; }
+.cta-section .btn-primary { background: var(--db-orange) !important; }
+.cta-section .btn-outline {
+  background: transparent !important;
+  color: #fff !important;
+  border-color: rgba(255,255,255,.35) !important;
+}
+.cta-section .btn-outline:hover { border-color: #fff !important; }
+
+/* ── Footer → dark navy ── */
+.site-footer {
+  background: var(--db-dark) !important;
+}
+.footer-glow { display: none !important; }
+.site-footer .footer-desc, .site-footer .footer-links a,
+.site-footer .footer-contact-list li, .site-footer .footer-contact-list a,
+.site-footer .footer-bottom p { color: rgba(255,255,255,.5) !important; }
+.site-footer .footer-heading { color: rgba(255,255,255,.85) !important; }
+.site-footer .footer-links a:hover, .site-footer .footer-contact-list a:hover { color: #fff !important; }
+.site-footer .footer-bottom { border-top-color: rgba(255,255,255,.1) !important; }
+.site-footer .social-link { color: rgba(255,255,255,.5) !important; border-color: rgba(255,255,255,.15) !important; }
+.site-footer .social-link:hover { color: #fff !important; border-color: rgba(255,255,255,.4) !important; background: transparent !important; }
+.site-footer .footer-legal a { color: rgba(255,255,255,.4) !important; }
+.site-footer .footer-legal a:hover { color: rgba(255,255,255,.8) !important; }
+
+/* ── Cards → flat with hover lift ── */
+.service-card, .value-card, .expertise-card,
+.process-step, .testimonial-card, .ai-cap,
+.consulting-card, .why-feature {
+  background: #fff !important;
+  border: 1px solid var(--db-border) !important;
+  border-radius: var(--db-radius) !important;
+  box-shadow: var(--db-shadow) !important;
+  transition: box-shadow .15s ease, transform .15s ease !important;
+}
+.service-card:hover, .value-card:hover, .expertise-card:hover,
+.consulting-card:hover, .why-feature:hover {
+  box-shadow: var(--db-shadow-h) !important;
+  transform: translateY(-3px) !important;
+  border-color: rgba(27,49,57,.18) !important;
+}
+
+/* ── Page hero ── */
+.page-hero, .page-hero-sm {
+  background: var(--db-oat) !important;
+  border-bottom: 1px solid var(--db-border) !important;
+}
+.page-hero .hero-glow, .page-hero-sm .hero-glow { display: none !important; }
+.page-title, .page-desc { color: var(--db-text) !important; }
+.page-desc { color: var(--db-muted) !important; font-size: 1.05rem !important; }
+
+/* ── Text gradient (keep brand blue) ── */
+.text-gradient {
+  background: linear-gradient(135deg, #2563EB, #4B6FE4) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* ── Section titles ── */
+.section-title { color: var(--db-text) !important; }
+
+/* ── Process steps ── */
+.process-step { background: #fff !important; border-color: var(--db-border) !important; }
+.process-arrow { color: var(--db-dim) !important; }
+
+/* ── Stats ── */
+.about-stat { background: var(--db-oat) !important; border-color: var(--db-border) !important; box-shadow: none !important; }
+.about-stat:hover { box-shadow: var(--db-shadow) !important; }
+.about-stat-label { color: var(--db-muted) !important; }
+
+/* ── Success banner ── */
+.success-banner { background: rgba(27,49,57,.06) !important; border-color: rgba(27,49,57,.15) !important; color: var(--db-dark) !important; }
+
+/* ── Form inputs ── */
+.form-group label { color: var(--db-text) !important; font-weight: 500 !important; }
+.form-group input, .form-group textarea {
+  background: #fff !important;
+  border: 1px solid var(--db-border) !important;
+  border-radius: var(--db-radius) !important;
+  color: var(--db-text) !important;
+}
+.form-group input:focus, .form-group textarea:focus {
+  border-color: var(--db-dark) !important;
+  box-shadow: 0 0 0 3px rgba(27,49,57,.08) !important;
+}
+.form-group input::placeholder, .form-group textarea::placeholder { color: var(--db-dim) !important; }
+
+/* ── Service detail icons ── */
+.service-detail-icon { border-radius: var(--db-radius) !important; }
+
+/* ── Expertise tags & service tech-stack ── */
+.expertise-tags span, .service-tech-stack span {
+  background: var(--db-oat) !important;
+  border: 1px solid var(--db-border) !important;
+  color: var(--db-muted) !important;
+  border-radius: 4px !important;
+  font-family: 'SFMono-Regular', 'Consolas', monospace !important;
+  font-size: .72rem !important;
+}
+
+/* ── Approach section (about) ── */
+.approach-section { background: var(--db-dark) !important; }
+.approach-section .section-title,
+.approach-section .section-badge,
+.approach-section h4,
+.approach-section p,
+.approach-section .approach-step p { color: rgba(255,255,255,.75) !important; }
+.approach-section h4 { color: rgba(255,255,255,.95) !important; }
+.approach-section .section-title { color: #fff !important; }
+.approach-section .approach-step-num { color: rgba(255,255,255,.3) !important; border-color: rgba(255,255,255,.1) !important; }
+.approach-section .about-stat { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.1) !important; }
+.approach-section .about-stat-num { color: #fff !important; }
+.approach-section .about-stat-label { color: rgba(255,255,255,.5) !important; }
+
+/* ── Badge hero (homepage badge dot) ── */
+.badge { border-radius: 4px !important; font-size: .75rem !important; }
+
+/* ── Clients label ── */
+.clients-label { color: var(--db-muted) !important; }
+.client-logo { filter: grayscale(1) opacity(.45) !important; }
+.client-logo:hover { filter: grayscale(.5) opacity(.7) !important; }
+
+/* ── Services hero pills ── */
+.services-hero-pill {
+  border-radius: 4px !important;
+  font-size: .75rem !important;
+  font-weight: 600 !important;
+}
+
+/* ── Glow line hide ── */
+.glow-line { display: none !important; }
+
+/* ── Contact response bar (match new theme) ── */
+.contact-response-bar { background: #fff !important; border-color: var(--db-border) !important; }
+.contact-response-badge { background: rgba(27,49,57,.06) !important; border-color: rgba(27,49,57,.12) !important; color: var(--db-dark) !important; }
+.contact-response-text { color: var(--db-muted) !important; }
+.contact-response-text strong { color: var(--db-dark) !important; }
+
+/* ── Contact page (dark form header already good) ── */
+.contact-office-card-header { background: linear-gradient(135deg, var(--db-dark-2), var(--db-dark)) !important; }
+.contact-channel-card { background: #fff !important; border-color: var(--db-border) !important; box-shadow: var(--db-shadow) !important; }
+.contact-channel-card:hover { border-color: var(--db-dark) !important; box-shadow: var(--db-shadow-h) !important; transform: translateY(-3px) !important; }
+.contact-guarantees { background: #fff !important; border-color: var(--db-border) !important; }
+.contact-metrics-strip { background: #fff !important; border-color: var(--db-border) !important; }
+
+/* ── Story checks (about) ── */
+.story-check span { color: var(--db-text) !important; }
+
+/* ── Values section ── */
+.values-section { background: var(--db-dark) !important; }
+.values-section .section-badge { color: rgba(255,255,255,.5) !important; }
+.values-section .section-title { color: #fff !important; }
+.values-section .text-gradient { background: linear-gradient(135deg,#7DD3FC,#93C5FD) !important; -webkit-background-clip: text !important; background-clip: text !important; -webkit-text-fill-color: transparent !important; }
+.values-section .value-card { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.1) !important; box-shadow: none !important; }
+.values-section .value-card:hover { background: rgba(255,255,255,.1) !important; transform: translateY(-3px) !important; box-shadow: none !important; }
+.values-section .value-card h3 { color: #fff !important; }
+.values-section .value-card p { color: rgba(255,255,255,.6) !important; }
+.values-section .value-icon { background: rgba(255,255,255,.08) !important; border-color: rgba(255,255,255,.12) !important; color: rgba(255,255,255,.8) !important; }
+
+/* ── Process section ── */
+.process-section { background: var(--db-oat) !important; }
+.process-step { background: #fff !important; }
+.process-step-num { background: var(--db-oat) !important; color: var(--db-muted) !important; border: 1px solid var(--db-border) !important; border-radius: 50% !important; }
+.process-step h3 { color: var(--db-text) !important; }
+.process-step p { color: var(--db-muted) !important; }
