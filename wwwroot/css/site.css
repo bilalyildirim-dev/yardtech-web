@@ -675,6 +675,7 @@ p { color: var(--muted); line-height: 1.75; }
   background: var(--oat-mid);
   color: var(--text);
   flex-shrink: 0;
+  align-self: flex-start;
 }
 .service-icon-blue   { background: rgba(59,130,246,.1);  color: #3B82F6; }
 .service-icon-purple { background: rgba(139,92,246,.1);  color: #8B5CF6; }
@@ -759,6 +760,10 @@ p { color: var(--muted); line-height: 1.75; }
   background: rgba(255,255,255,.12);
   color: #fff;
 }
+.consulting-icon-blue  { background: rgba(91,130,255,.12); border: 1px solid rgba(91,130,255,.25); color: #5B82FF; }
+.consulting-icon-green { background: rgba(16,185,129,.08); border: 1px solid rgba(16,185,129,.2);  color: #10B981; }
+.float-card-val--green { color: #10B981; }
+.tstat-val--green      { color: #10B981; }
 .consulting-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: .625rem; }
 .consulting-card p { font-size: .875rem; color: var(--muted); margin-bottom: 1.25rem; }
 .consulting-list {
@@ -1247,11 +1252,11 @@ p { color: var(--muted); line-height: 1.75; }
   color: #fff;
   flex-shrink: 0;
 }
-.service-icon-blue   { background: #3B82F6; }
-.service-icon-green  { background: #10B981; }
-.service-icon-purple { background: #8B5CF6; }
-.service-icon-red    { background: var(--red); }
-.service-icon-amber  { background: #F59E0B; color: #fff; }
+.service-detail-icon.service-icon-blue   { background: #3B82F6; color: #fff; }
+.service-detail-icon.service-icon-green  { background: #10B981; color: #fff; }
+.service-detail-icon.service-icon-purple { background: #8B5CF6; color: #fff; }
+.service-detail-icon.service-icon-red    { background: var(--red); color: #fff; }
+.service-detail-icon.service-icon-amber  { background: #F59E0B; color: #fff; }
 
 .service-detail-header {
   display: flex;
