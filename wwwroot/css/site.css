@@ -1279,62 +1279,64 @@ p { color: var(--muted); line-height: 1.75; }
 /* Step cards row */
 .approach-steps-row {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 .approach-step-card {
   flex: 1;
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.1);
+  min-width: 0;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
   border-radius: var(--r-lg);
-  padding: 2rem 1.5rem;
+  padding: 1.75rem 1.375rem;
   position: relative;
   transition: background var(--t), border-color var(--t);
 }
 .approach-step-card:hover {
-  background: rgba(255,255,255,.09);
-  border-color: rgba(255,255,255,.2);
+  background: rgba(255,255,255,.1);
+  border-color: rgba(255,255,255,.22);
 }
 .approach-step-icon {
-  width: 52px; height: 52px;
+  width: 46px; height: 46px;
   background: rgba(99,102,241,.15);
   border: 1px solid rgba(99,102,241,.3);
   border-radius: var(--r-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--blue);
-  margin-bottom: 1.25rem;
+  color: #818cf8;
+  margin-bottom: 1rem;
 }
 .approach-step-badge {
   position: absolute;
   top: 1rem; right: 1rem;
-  font-size: .7rem;
+  font-size: .68rem;
   font-weight: 700;
-  color: var(--blue);
+  color: #818cf8;
   background: rgba(99,102,241,.12);
   border: 1px solid rgba(99,102,241,.25);
   border-radius: 999px;
-  padding: .2rem .6rem;
+  padding: .18rem .55rem;
   letter-spacing: .04em;
 }
 .approach-step-card h4 {
-  font-size: 1rem;
+  font-size: .95rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: .625rem;
+  margin-bottom: .5rem;
 }
 .approach-step-card p {
-  font-size: .85rem;
-  color: rgba(255,255,255,.5);
-  line-height: 1.65;
+  font-size: .82rem;
+  color: rgba(255,255,255,.62);
+  line-height: 1.7;
 }
 .approach-step-arrow {
   flex-shrink: 0;
-  padding: 0 .75rem;
-  color: rgba(255,255,255,.2);
+  padding: 0 .625rem;
+  color: rgba(255,255,255,.18);
+  align-self: center;
 }
 
 /* Stats row */
