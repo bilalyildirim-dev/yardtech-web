@@ -473,18 +473,27 @@ p { color: var(--muted); line-height: 1.75; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: stretch;
 }
 .why-image-wrap {
   position: relative;
   border-radius: var(--r-lg);
   overflow: hidden;
+  flex: 1;
 }
 .why-image-wrap img {
   width: 100%;
-  height: 420px;
+  height: 100%;
+  min-height: 420px;
   object-fit: cover;
   border-radius: var(--r-lg);
+}
+/* Footer logo in dark area */
+.site-footer .nav-logo .site-logo-img {
+  border-radius: 10px;
+  padding: 7px 12px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
 }
 .why-image-badge {
   position: absolute;
@@ -569,23 +578,25 @@ p { color: var(--muted); line-height: 1.75; }
 .process-arrow { display: none; }
 
 /* ── STATS GRID (replaces rings) ── */
-.stats-section { background: var(--dark); padding: 4rem 0; }
+.stats-section { background: var(--oat); padding: 4rem 0; }
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
-  border: 1px solid rgba(255,255,255,.1);
-  border-radius: var(--r-lg);
+  background: #0D1B27;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,.22), 0 4px 16px rgba(0,0,0,.12);
 }
 .stat-item {
-  padding: 2.5rem 2rem;
+  padding: 2.75rem 2rem;
   text-align: center;
-  border-right: 1px solid rgba(255,255,255,.1);
+  border-right: 1px solid rgba(255,255,255,.08);
   transition: background var(--t);
 }
 .stat-item:last-child { border-right: none; }
-.stat-item:hover { background: rgba(255,255,255,.04); }
+.stat-item:hover { background: rgba(255,255,255,.03); }
 .stat-val {
   font-size: 2.5rem;
   font-weight: 700;
@@ -692,7 +703,7 @@ p { color: var(--muted); line-height: 1.75; }
 
 /* ── STATS / RINGS SECTION ── */
 .stats-section {
-  background: var(--dark);
+  background: var(--oat);
   padding: 4rem 0;
 }
 .rings-section { background: var(--oat); }
@@ -792,7 +803,7 @@ p { color: var(--muted); line-height: 1.75; }
 .service-tag-amber { background: rgba(245,158,11,.08); border-color: rgba(245,158,11,.2); color: #D97706; }
 
 /* ── WHY IMAGE wrapper ── */
-.why-image { position: relative; }
+.why-image { position: relative; display: flex; flex-direction: column; }
 .why-image-badge {
   position: absolute;
   bottom: 1.5rem; left: 1.5rem;
@@ -971,7 +982,7 @@ p { color: var(--muted); line-height: 1.75; }
 }
 .techstack-track {
   display: flex;
-  gap: .875rem;
+  gap: 0;
   width: max-content;
   animation: scroll-track 30s linear infinite;
 }
@@ -984,6 +995,7 @@ p { color: var(--muted); line-height: 1.75; }
   align-items: center;
   gap: .5rem;
   padding: .5rem 1.1rem;
+  margin-right: 1rem;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 100px;
