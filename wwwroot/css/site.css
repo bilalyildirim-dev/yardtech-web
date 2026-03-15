@@ -177,7 +177,7 @@ p { color: var(--muted); line-height: 1.75; }
   gap: 2rem;
 }
 .nav-logo { display: flex; align-items: center; flex-shrink: 0; }
-.site-logo-img { height: 48px; width: auto; }
+.site-logo-img { height: 64px; width: auto; }
 
 .nav-links {
   display: flex;
@@ -490,6 +490,7 @@ p { color: var(--muted); line-height: 1.75; }
 }
 /* Footer logo */
 .site-footer .nav-logo .site-logo-img {
+  height: 72px;
   border-radius: 0;
   padding: 0;
   background: none;
