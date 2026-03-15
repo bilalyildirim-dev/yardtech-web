@@ -19,8 +19,8 @@ input, textarea, select { font-family: inherit; }
   --white:     #FFFFFF;
   --dark:      #1B3139;
   --dark-2:    #0F2028;
-  --red:       #FF3621;
-  --red-hover: #D42D1A;
+  --red:       #2563EB;
+  --red-hover: #1D4ED8;
   --text:      #1B3139;
   --muted:     #5A6F77;
   --dim:       #8FA3AA;
@@ -555,8 +555,8 @@ p { color: var(--muted); line-height: 1.75; }
 
 /* ai-cap-icon color variants */
 .ai-cap-icon-purple {
-  background: rgba(139,92,246,.1) !important;
-  color: #8B5CF6 !important;
+  background: rgba(13,148,136,.1) !important;
+  color: #0D9488 !important;
 }
 .ai-cap-icon-cyan {
   background: rgba(6,182,212,.1) !important;
@@ -678,7 +678,7 @@ p { color: var(--muted); line-height: 1.75; }
   align-self: flex-start;
 }
 .service-icon-blue   { background: rgba(59,130,246,.1);  color: #3B82F6; }
-.service-icon-purple { background: rgba(139,92,246,.1);  color: #8B5CF6; }
+.service-icon-purple { background: rgba(13,148,136,.1);  color: #0D9488; }
 .service-icon-green  { background: rgba(16,185,129,.1);  color: #10B981; }
 .service-icon-red    { background: rgba(255,54,33,.1);   color: var(--red); }
 .service-icon-amber  { background: rgba(245,158,11,.1);  color: #F59E0B; }
@@ -760,7 +760,7 @@ p { color: var(--muted); line-height: 1.75; }
   background: rgba(255,255,255,.12);
   color: #fff;
 }
-.consulting-icon-blue  { background: rgba(91,130,255,.12); border: 1px solid rgba(91,130,255,.25); color: #5B82FF; }
+.consulting-icon-blue  { background: rgba(37,99,235,.12); border: 1px solid rgba(37,99,235,.25); color: #2563EB; }
 .consulting-icon-green { background: rgba(16,185,129,.08); border: 1px solid rgba(16,185,129,.2);  color: #10B981; }
 .float-card-val--green { color: #10B981; }
 .tstat-val--green      { color: #10B981; }
@@ -1225,7 +1225,7 @@ p { color: var(--muted); line-height: 1.75; }
   border: 1px solid;
 }
 .pill-blue   { background: rgba(59,130,246,.15); border-color: rgba(59,130,246,.3); color: #93C5FD; }
-.pill-purple { background: rgba(139,92,246,.15); border-color: rgba(139,92,246,.3); color: #C4B5FD; }
+.pill-purple { background: rgba(13,148,136,.15); border-color: rgba(13,148,136,.3); color: #5EEAD4; }
 .pill-amber  { background: rgba(245,158,11,.15); border-color: rgba(245,158,11,.3); color: #FCD34D; }
 .pill-red    { background: rgba(239,68,68,.15);  border-color: rgba(239,68,68,.3);  color: #FCA5A5; }
 
@@ -1254,7 +1254,7 @@ p { color: var(--muted); line-height: 1.75; }
 }
 .service-detail-icon.service-icon-blue   { background: #3B82F6; color: #fff; }
 .service-detail-icon.service-icon-green  { background: #10B981; color: #fff; }
-.service-detail-icon.service-icon-purple { background: #8B5CF6; color: #fff; }
+.service-detail-icon.service-icon-purple { background: #0D9488; color: #fff; }
 .service-detail-icon.service-icon-red    { background: var(--red); color: #fff; }
 .service-detail-icon.service-icon-amber  { background: #F59E0B; color: #fff; }
 
@@ -1275,7 +1275,7 @@ p { color: var(--muted); line-height: 1.75; }
   border: 1px solid;
 }
 .service-tag-blue   { background: rgba(59,130,246,.08); border-color: rgba(59,130,246,.2); color: #3B82F6; }
-.service-tag-purple { background: rgba(139,92,246,.08); border-color: rgba(139,92,246,.2); color: #8B5CF6; }
+.service-tag-purple { background: rgba(13,148,136,.08); border-color: rgba(13,148,136,.2); color: #0D9488; }
 .service-tag-red    { background: rgba(239,68,68,.08);  border-color: rgba(239,68,68,.2);  color: #EF4444; }
 
 .service-detail-content p { margin-bottom: 1.5rem; }
@@ -1738,6 +1738,30 @@ p { color: var(--muted); line-height: 1.75; }
 .tline-cursor  { color: var(--text); }
 .tprompt { color: var(--red); font-family: monospace; }
 .tcmd    { color: var(--text); font-family: monospace; }
+
+/* ── SERVICE DETAIL VISUAL (image column) ── */
+.service-detail-visual {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: var(--oat-mid);
+  align-self: stretch;
+}
+.service-detail-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s ease;
+}
+.service-detail:hover .service-detail-visual img { transform: scale(1.03); }
+.service-detail-content .service-detail-icon { align-self: flex-start; }
+
+/* ── PILL TEAL ── */
+.pill-teal { background: rgba(13,148,136,.15); border-color: rgba(13,148,136,.3); color: #2DD4BF; }
+
+/* ── CONTACT FORM CARD HEADER BADGE ── */
+.contact-form-card-header-badge { display: none; }
 
 /* ── MOBILE NAV ── */
 @media (max-width: 768px) {

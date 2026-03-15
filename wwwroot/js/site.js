@@ -437,6 +437,7 @@ function initLiveNotif() {
   let ni = 0;
 
   function show() {
+    if (el.dataset.dismissed) return;
     const n = notifications[ni % notifications.length];
     titleEl.textContent = n.title;
     subEl.textContent   = n.sub;
