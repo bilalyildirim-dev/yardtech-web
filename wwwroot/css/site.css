@@ -590,7 +590,7 @@ p { color: var(--muted); line-height: 1.75; }
 
 /* ── STATS / RINGS SECTION ── */
 .stats-section {
-  background: var(--oat);
+  background: var(--dark);
   padding: 4rem 0;
 }
 .rings-section { background: var(--oat); }
