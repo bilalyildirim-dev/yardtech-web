@@ -1626,12 +1626,28 @@ p { color: var(--muted); line-height: 1.75; }
 }
 .contact-office-detail-label { font-size: .72rem; color: var(--dim); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; margin-bottom: .2rem; }
 .contact-office-detail-val { font-size: .875rem; color: var(--text); }
-.contact-office-map {
-  width: 100%;
-  height: 200px;
-  border: none;
-  border-top: 1px solid var(--border);
-  display: block;
+.contact-office-map { display: none; }
+
+.map-inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  margin-top: .45rem;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+  opacity: .85;
+  transition: opacity var(--t);
+}
+.map-inline-link:hover { opacity: 1; text-decoration: underline; }
+
+.contact-info-panel {
+  display: flex;
+  flex-direction: column;
+}
+.contact-office-card {
+  flex: 1;
 }
 
 .contact-guarantees { margin-top: 1.5rem; }
